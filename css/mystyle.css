@@ -1,0 +1,63 @@
+/* Insert your style here */
+
+:root {
+	--width: 512px;
+	/* --text-colour:  white; */
+	--color-motive: #8AE234CC;
+}
+
+body {
+	
+	background-image: url('../img/caro_bg.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+
+h3 {
+	margin-top: 0;
+}
+
+.header-container {
+	/* width: var(--width); */
+	display: block;
+}
+
+.body-container {
+	width: 80%;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin-top: 150px; */
+	display: block;
+	/*
+	background-image: url('../img/caro_bg.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	*/
+}
+
+.main-title {
+	font-size: 64px;
+}
+
+.about {
+	/* width: var(--width); */
+	background-color: var(--color-motive);
+}
+
+.card img {
+	height: 140px;
+	margin-top: 5px;
+}
+
+.one-column {
+	background-color: whitesmoke;
+	opacity: 0.9;
+}
+
+.stealth-link:hover {
+	color: var(--color-motive);
+}

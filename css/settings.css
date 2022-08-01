@@ -1,0 +1,34 @@
+/*
+	This is part of myF, a CSS framework developed by Marcelo Freri.
+*/
+
+
+/* Variables */
+
+:root {
+	/* Colours */
+	--text-colour:  #4a4a4a;
+	--bg-colour: white;
+	--stealth-hover: gray;
+	--link-colour: #729FCF;
+
+	/* Colours in dark mode */
+	--text-dark-mode: lightgray;
+	--bg-dark-mode: #303841;
+	--stealth-hover-dark: white;
+
+	/* Fonts */
+	/* The font files are setup in fonts.css */
+	--title-font: 'AvantGarde';
+	--text-font: 'BellGothic';
+
+	/* Margins */
+	--small-gap: 16px;
+	--medium-gap: 32px;
+	--large-gap: 64px;
+
+	/* US complaint */
+	--text-color: var(--text-colour);
+	--bg-color: var(--bg-colour);
+	--link-color: var(--link-colour);
+}

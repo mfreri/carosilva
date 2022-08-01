@@ -1,0 +1,369 @@
+@import "fonts.css";
+@import "settings.css";
+
+
+/*
+	myF is a simple framework inspired on Bootstrap and developed by Marcelo Freri.
+
+	Contact info:  mfreri@proton.me
+*/
+
+
+/* PRIMITIVES */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-colour);
+	color: var(--text-colour);
+	font-family: var(--text-font);
+	/* margin: var(--small-gap); */
+	padding: var(--small-gap);
+}
+
+h1, h2, h3 {
+	font-family: var(--title-font);
+}
+
+h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+hr {
+	color: var(--text-colour);
+	background-color: var(--text-colour);
+	border: none;
+	height: 1px;
+	margin: var(--small-gap);
+}
+
+p {
+	/* margin-top: 0; */
+	text-align: justify;
+}
+
+footer {
+	padding: 0 10px;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: var(--link-colour);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	opacity: .90;
+	/*transition: opacity .3s ease-in-out;*/
+}
+
+a img:hover {
+	opacity: 1;
+}
+
+
+
+/* MAIN CONTAINERS */
+
+.header-container {
+	/*background-color: pink;*/
+	padding: var(--small-gap);
+	clear: both;
+}
+
+.body-container {
+	/*background-color: palegoldenrod;*/
+	padding: var(--medium-gap);
+	clear: both;
+	display: inline-block;
+}
+
+.footer-container {
+	/*background-color: lightgreen;*/
+	padding: var(--small-gap);
+	clear: both;
+}
+
+
+/* SUB CONTAINERS */
+
+.main-title {
+	font-family: var(--title-font);
+	font-size: 48px;
+	/* margin-bottom: 20px; */
+}
+
+.sub-title {
+	margin: 0;
+	margin-bottom: var(--small-gap);
+}
+
+.navbar nav ul li{
+	/* margin: 5px 0; */
+	padding-left: var(--small-gap);
+	padding-right: var(--small-gap);
+}
+
+.navbar-single {
+	clear: both;
+}
+
+.navbar-left {
+	clear: left;
+}
+
+.navbar-right {
+	clear: right;
+}
+
+.navbar-left nav ul li {
+	padding-right: var(--small-gap);
+	padding-left: 0;
+}
+
+.navbar-right nav ul li {
+	padding-left: var(--small-gap);
+	padding-right: 0;
+}
+
+.card {
+	border: 1px solid;
+	/* border-radius: 16px; */
+	padding: 0.01em 16px;
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: space-between;
+	margin: var(--small-gap) auto;
+}
+
+.card-text {
+	/* width: 70%; */
+	margin: var(--small-gap);
+	overflow-y: auto;
+}
+
+.card-img {
+	/* width: 30%; */
+	margin: var(--small-gap);
+}
+
+
+/* POSITION */
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-center {
+	/* Must set width in HTML file */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	left: var(--small-gap);
+	right: var(--small-gap);
+	background-color: var(--bg-colour);
+}
+
+
+/* SIZES */
+
+.size-wide {
+	width: 100%;
+}
+
+.size-normal {
+	width: 90%;
+}
+
+.size-narrow {
+	width: 60%;
+}
+
+.size-tight {
+	width: 30%;
+}
+
+
+/* ATTRIBUTES */
+
+.rounded {
+	border-radius: 16px;
+	border: 1px solid;
+	margin-bottom: var(--small-gap);
+}
+
+
+/* LINKS */
+
+.stealth-link {
+	text-decoration: none;
+	color: var(--text-colour);
+}
+
+.stealth-link:hover {
+	text-decoration: none;
+	color: var(--stealth-hover);
+}
+
+.permanent-link:visited {
+	color: var(--link-colour);
+}
+
+.back-button {
+	margin: var(--small-gap) 0;
+}
+
+.hint div {
+	display: none;
+	background-color: yellow;
+}
+
+.hint:hover div {
+	display: inline-block;
+}
+
+
+/* TEXT */
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.list-unstyled {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.list-inline li {
+	/* For use in the ul element */
+	display: inline-block;
+	/*
+	margin-left: var(--small-gap);
+	margin-right: var(--small-gap);
+	*/
+}
+
+
+/* IMAGES */
+.img-portrait {
+	padding: var(--small-gap);
+}
+
+
+/* GRID */
+
+.one-column, .two-columns, .three-columns, .four-columns {
+	padding: var(--small-gap);
+}
+
+.one-column {
+	clear: both;
+}
+
+.two-columns {
+	width: 50%;
+	float: left;
+}
+
+.three-columns {
+	width: 33.33%;
+	float: left;
+}
+
+.four-columns {
+	width: 25%;
+	float: left;
+}
+
+.left-column {
+	padding-right: var(--large-gap);
+}
+
+
+/* RESPONSIVE */
+
+/*
+	xs:      -> 575
+	sm:  576 -> 767
+	md:  768 -> 991
+	lg:  992 -> 1199
+	xl: 1200 ->
+*/
+
+/* Extra-small */
+
+@media (max-width: 575px) {
+	.xs-hide {
+		display: none;
+	}
+}
+
+/* Small */
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.sm-hide {
+		display: none;
+	}
+}
+
+/* Medium */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.md-hide {
+		display: none;
+	}
+}
+
+/* Large */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lg-hide {
+		display: none;
+	}
+}
+
+/* Extra-large */
+
+@media (min-width: 1200px) {
+	.xl-hide {
+		display: none;
+	}
+}
+
+
+/* DARK MODE COMPATIBILITY */
+/*
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--bg-dark-mode);
+		color: var(--text-dark-mode);
+	}
+	.stealth-link {
+		color: var(--text-dark-mode);
+	}
+	.stealth-link:hover {
+		color: var(--stealth-hover-dark);
+	}
+	.fixed-top {
+		background-color: var(--bg-dark-mode);
+	}
+}
+*/
