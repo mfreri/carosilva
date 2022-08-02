@@ -138,7 +138,6 @@ a img:hover {
 
 .card {
 	border: 1px solid;
-	/* border-radius: 16px; */
 	padding: 0.01em 16px;
 	background-color: whitesmoke;
 	display: flex;
@@ -155,6 +154,12 @@ a img:hover {
 .card-img {
 	/* width: 30%; */
 	margin: var(--small-gap);
+}
+
+.container {
+	padding: var(--small-gap);
+	margin-bottom: var(--small-gap);
+	background-color: var(--bg-color);
 }
 
 .maintenance {
@@ -185,7 +190,6 @@ a img:hover {
 	top: 0;
 	left: var(--small-gap);
 	right: var(--small-gap);
-	/* background-color: var(--bg-colour); */
 }
 
 
@@ -213,7 +217,10 @@ a img:hover {
 .rounded {
 	border-radius: 16px;
 	border: 1px solid;
-	margin-bottom: var(--small-gap);
+}
+
+.transparent {
+	opacity: 0.9;
 }
 
 
@@ -265,10 +272,6 @@ a img:hover {
 .list-inline li {
 	/* For use in the ul element */
 	display: inline-block;
-	/*
-	margin-left: var(--small-gap);
-	margin-right: var(--small-gap);
-	*/
 }
 
 
@@ -282,6 +285,7 @@ a img:hover {
 
 .one-column, .two-columns, .three-columns, .four-columns {
 	padding: var(--small-gap);
+	margin-bottom: var(--small-gap);
 }
 
 .one-column {
