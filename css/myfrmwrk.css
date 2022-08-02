@@ -157,6 +157,12 @@ a img:hover {
 	margin: var(--small-gap);
 }
 
+.maintenance {
+	font-family: var(--maintenance-font);
+	font-size: 18px;
+	background-color: yellow;
+	color: red;
+}
 
 /* POSITION */
 
@@ -179,7 +185,7 @@ a img:hover {
 	top: 0;
 	left: var(--small-gap);
 	right: var(--small-gap);
-	background-color: var(--bg-colour);
+	/* background-color: var(--bg-colour); */
 }
 
 
