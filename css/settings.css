@@ -8,9 +8,10 @@
 :root {
 	/* Colours */
 	--text-colour:  #4a4a4a;
-	--bg-colour: whitesmoke;
+	--bg-colour: #F5F5F5CC;
 	--stealth-hover: gray;
 	--link-colour: #729FCF;
+	--hint-colour: #FFF38E;
 
 	/* Colours in dark mode */
 	--text-dark-mode: lightgray;
@@ -22,13 +23,17 @@
 	--title-font: 'AvantGarde';
 	--text-font: 'BellGothic';
 	--maintenance-font: 'Andale';
+	/* Sizes */
+	--small-font: 12px;
+	--medium-font: 14px;
+	--large-font: 34px;
 
 	/* Margins */
 	/* Extra Small */
 	--small-gap-xs: 8px;
 	--medium-gap-xs: 16px;
 	--large-gap-xs: 32px;
-	/* Normal */
+	/* Medium */
 	--small-gap: 16px;
 	--medium-gap: 32px;
 	--large-gap: 64px;

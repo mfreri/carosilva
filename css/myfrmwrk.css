@@ -22,12 +22,40 @@ body {
 	padding: var(--small-gap);
 }
 
-h1, h2, h3 {
-	font-family: var(--title-font);
+/*
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
 }
 
+h2 {
+	font-size: 1.5em;
+	margin: .75em 0;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: .83em 0;
+}
+
+h5 {
+	font-size: .83em;
+	margin: 1.5em 0
+}
+
+h6 {
+	font-size: .75em;
+	margin: 1.67em 0;
+}
+*/
+
 h1 {
-	font-size: 48px;
+	font-size: var(--large-font);
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: var(--title-font);
+	font-weight: bolder
 	margin: 0;
 }
 
@@ -45,7 +73,7 @@ p {
 }
 
 footer {
-	padding: 0 10px;
+	padding: 0 var(--small-gap);
 	clear: both;
 }
 
@@ -88,6 +116,7 @@ a img:hover {
 	/*background-color: lightgreen;*/
 	padding: var(--small-gap);
 	clear: both;
+	font-size: var(--small-font);
 }
 
 
@@ -95,8 +124,9 @@ a img:hover {
 
 .main-title {
 	font-family: var(--title-font);
-	font-size: 48px;
-	/* margin-bottom: 20px; */
+	font-size: var(--large-font);
+	font-weight: bolder;
+	margin: 0;
 }
 
 .sub-title {
@@ -137,7 +167,6 @@ a img:hover {
 }
 
 .card {
-	border: 1px solid;
 	padding: 0.01em 16px;
 	background-color: whitesmoke;
 	display: flex;
@@ -162,11 +191,13 @@ a img:hover {
 	background-color: var(--bg-color);
 }
 
+/* I'm not sure about the purpose of this class */
 .maintenance {
 	font-family: var(--maintenance-font);
-	font-size: 18px;
+	font-size: var(--medium-font);
 	background-color: yellow;
 	color: red;
+	margin: var(--small-gap) 0;
 }
 
 /* POSITION */
@@ -199,7 +230,7 @@ a img:hover {
 	width: 100%;
 }
 
-.size-normal {
+.size-medium {
 	width: 90%;
 }
 
@@ -214,9 +245,13 @@ a img:hover {
 
 /* ATTRIBUTES */
 
+.bordered {
+	border: 1px solid;
+}
+
 .rounded {
 	border-radius: 16px;
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .transparent {
@@ -246,7 +281,7 @@ a img:hover {
 
 .hint div {
 	display: none;
-	background-color: yellow;
+	background-color: var(--hint-colour);
 }
 
 .hint:hover div {
@@ -331,6 +366,13 @@ a img:hover {
 		--large-gap: var(--large-gap-xs);
 	}
 
+	.xs-refactor {
+		/*
+			This values will only apply with the current window size.
+		*/
+		font-size: var(--small-font);
+	}
+
 	.xs-hide {
 		display: none;
 	}
@@ -367,6 +409,13 @@ a img:hover {
 		--small-gap: var(--small-gap-xl);
 		--normal-gap: var(--normal-gap-xl);
 		--large-gap: var(--large-gap-xl);
+	}
+
+	.xl-refactor {
+		/*
+			This values will only apply with the current window size.
+		*/
+		font-size: var(--large-font);
 	}
 
 	.xl-hide {
