@@ -15,9 +15,11 @@
 }
 
 body {
-	background-color: var(--bg-colour);
 	color: var(--text-colour);
 	font-family: var(--text-font);
+	font-size: var(--medium-size);
+	margin: 0;
+	padding: 0;
 	/* padding: var(--small-gap); */
 }
 
@@ -116,7 +118,7 @@ a img:hover {
 .footer-container {
 	/*background-color: lightgreen;*/
 	margin: 0 auto;
-	padding: var(--small-gap);
+	padding: var(--large-gap);
 	clear: both;
 	font-size: var(--small-font);
 }
@@ -141,9 +143,9 @@ a img:hover {
 }
 
 .navbar nav ul li{
-	/* margin: 5px 0; */
 	padding-left: var(--small-gap);
 	padding-right: var(--small-gap);
+	padding: 0 1%;
 }
 
 .navbar-single {
@@ -159,18 +161,16 @@ a img:hover {
 }
 
 .navbar-left nav ul li {
-	padding-right: var(--small-gap);
 	padding-left: 0;
 }
 
 .navbar-right nav ul li {
-	padding-left: var(--small-gap);
 	padding-right: 0;
 }
 
 .card {
 	padding: 0.01em 16px;
-	background-color: whitesmoke;
+	background-color: var(--bg-colour);
 	display: flex;
 	justify-content: space-between;
 	margin: var(--medium-gap) auto;
@@ -188,9 +188,9 @@ a img:hover {
 }
 
 .container {
+	background-color: var(--bg-colour);
 	padding: var(--small-gap);
 	margin-bottom: var(--medium-gap);
-	background-color: var(--bg-color);
 }
 
 /* I'm not sure about the purpose of this class */
@@ -229,6 +229,7 @@ a img:hover {
 	box-sizing: border-box;
 	position: sticky;
 	top: 0;
+	z-index: 10;
 }
 
 
@@ -258,6 +259,7 @@ a img:hover {
 }
 
 .rounded {
+	padding: 0.01em 16px;
 	border-radius: 16px;
 	/* border: 1px solid; */
 }
@@ -328,7 +330,7 @@ a img:hover {
 
 .one-column, .two-columns, .three-columns, .four-columns {
 	padding: var(--small-gap);
-	margin-bottom: var(--small-gap);
+	/* margin-bottom: var(--small-gap); */
 }
 
 .one-column {

@@ -5,19 +5,18 @@
 }
 
 body {
+	/*
 	background-image: url('../img/caro_bg.jpeg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	
-}
-
-h3 {
-	margin-top: 0;
+	*/
+	margin: 0;
+	padding: 0;
 }
 
 .header-container {
-	background-color: var(--bg-color);
+	background-color: white;
 	/* width: 90%; */
 	display: block;
 	margin-bottom: 0;
@@ -25,32 +24,51 @@ h3 {
 }
 
 .body-container {
+	background-image: url('../img/caro_bg.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	/*
 	width: 90%;
 	max-width: 1024px;
+	*/
 	min-width: 330px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
+	padding: 10px;
 	display: block;
 }
 
+.footer-container {
+	background-color: var(--color-motive);
+	padding-top: 32px;
+}
+
 .main-title {
-	font-size: 64px;
+	font-size: 72px;
 }
 
 .navbar {
-	background-color: var(--bg-color);
+	background-color: white;
 	/* width: 90%; */
 	margin: 0 auto;
-	padding: var(--small-gap);
+	padding: 2%;
 }
 
 .navbar ul {
 	margin: 0;
 }
 
+.container {
+	max-width: 1024px;
+	margin: 16px auto;
+}
+
 .about {
 	background-color: var(--color-motive);
+}
+
+.card {
+	margin: 32px auto;
+	max-width: 1024px;
 }
 
 .card img {
