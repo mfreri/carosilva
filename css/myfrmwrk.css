@@ -142,7 +142,7 @@ a img:hover {
 
 }
 
-.navbar nav ul li{
+.navbar nav ul li {
 	padding-left: var(--small-gap);
 	padding-right: var(--small-gap);
 	padding: 0 1%;
