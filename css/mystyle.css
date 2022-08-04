@@ -18,7 +18,7 @@ h3 {
 
 .header-container {
 	background-color: var(--bg-color);
-	width: 90%;
+	/* width: 90%; */
 	display: block;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -40,7 +40,7 @@ h3 {
 
 .navbar {
 	background-color: var(--bg-color);
-	width: 90%;
+	/* width: 90%; */
 	margin: 0 auto;
 	padding: var(--small-gap);
 }

@@ -30,9 +30,9 @@
 
 	/* Margins */
 	/* Extra Small */
-	--small-gap-xs: 8px;
-	--medium-gap-xs: 16px;
-	--large-gap-xs: 32px;
+	--small-gap-xs: 4px;
+	--medium-gap-xs: 8px;
+	--large-gap-xs: 16px;
 	/* Medium */
 	--small-gap: 16px;
 	--medium-gap: 32px;

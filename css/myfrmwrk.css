@@ -173,7 +173,7 @@ a img:hover {
 	background-color: whitesmoke;
 	display: flex;
 	justify-content: space-between;
-	margin: var(--small-gap) auto;
+	margin: var(--medium-gap) auto;
 }
 
 .card-text {
@@ -189,7 +189,7 @@ a img:hover {
 
 .container {
 	padding: var(--small-gap);
-	margin-bottom: var(--small-gap);
+	margin-bottom: var(--medium-gap);
 	background-color: var(--bg-color);
 }
 
@@ -370,7 +370,7 @@ a img:hover {
 @media (max-width: 575px) {
 	:root {
 		--small-gap: var(--small-gap-xs);
-		--normal-gap: var(--normal-gap-xs);
+		--medium-gap: var(--medium-gap-xs);
 		--large-gap: var(--large-gap-xs);
 	}
 
@@ -415,7 +415,7 @@ a img:hover {
 @media (min-width: 1200px) {
 	:root {
 		--small-gap: var(--small-gap-xl);
-		--normal-gap: var(--normal-gap-xl);
+		--medium-gap: var(--medium-gap-xl);
 		--large-gap: var(--large-gap-xl);
 	}
 
