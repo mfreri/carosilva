@@ -79,3 +79,16 @@ body {
 .stealth-link:hover {
 	color: var(--color-motive);
 }
+
+.current-show {
+	/* background-color: var(--color-motive); */
+	font-weight: bold;
+}
+
+.first-item {
+	padding-left: 0;
+}
+
+.right-item {
+	padding-right: 0;
+}
