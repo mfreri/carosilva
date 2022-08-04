@@ -1,7 +1,6 @@
 /* Insert your style here */
 
 :root {
-	--width: 512px;
 	--color-motive: #8AE234CC;
 }
 
@@ -18,7 +17,11 @@ h3 {
 }
 
 .header-container {
+	background-color: var(--bg-color);
+	width: 90%;
 	display: block;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .body-container {
@@ -33,6 +36,17 @@ h3 {
 
 .main-title {
 	font-size: 64px;
+}
+
+.navbar {
+	background-color: var(--bg-color);
+	width: 90%;
+	margin: 0 auto;
+	padding: var(--small-gap);
+}
+
+.navbar ul {
+	margin: 0;
 }
 
 .about {

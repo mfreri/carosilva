@@ -18,8 +18,7 @@ body {
 	background-color: var(--bg-colour);
 	color: var(--text-colour);
 	font-family: var(--text-font);
-	/* margin: var(--small-gap); */
-	padding: var(--small-gap);
+	/* padding: var(--small-gap); */
 }
 
 /*
@@ -101,19 +100,22 @@ a img:hover {
 
 .header-container {
 	/*background-color: pink;*/
+	margin: 0 auto;
 	padding: var(--small-gap);
 	clear: both;
 }
 
 .body-container {
 	/*background-color: palegoldenrod;*/
-	padding: var(--medium-gap);
+	margin: 0 auto;
+	padding: var(--small-gap);
 	clear: both;
 	display: inline-block;
 }
 
 .footer-container {
 	/*background-color: lightgreen;*/
+	margin: 0 auto;
 	padding: var(--small-gap);
 	clear: both;
 	font-size: var(--small-font);
@@ -221,6 +223,12 @@ a img:hover {
 	top: 0;
 	left: var(--small-gap);
 	right: var(--small-gap);
+}
+
+.sticky-top {
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
 }
 
 
