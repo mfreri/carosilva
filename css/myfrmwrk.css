@@ -15,6 +15,7 @@
 }
 
 body {
+	background-color:var(--bg-colour);
 	color: var(--text-colour);
 	font-family: var(--text-font);
 	font-size: var(--medium-size);
@@ -71,6 +72,8 @@ hr {
 p {
 	/* margin-top: 0; */
 	text-align: justify;
+	/* margin: var(--small-gap) auto var(--medium-gap) auto; */
+	margin: 1em auto;
 }
 
 footer {
@@ -126,25 +129,11 @@ a img:hover {
 
 /* SUB CONTAINERS */
 
-.main-title {
-	font-family: var(--title-font);
-	font-size: var(--large-font);
-	font-weight: bolder;
-	margin: 0;
-}
-
-.sub-title {
-	margin: 0;
-	margin-bottom: var(--small-gap);
-}
-
 .navbar {
-
+	margin: var(--small-gap);
 }
 
 .navbar nav ul li {
-	padding-left: var(--small-gap);
-	padding-right: var(--small-gap);
 	padding: 0 1%;
 }
 
@@ -154,10 +143,12 @@ a img:hover {
 
 .navbar-left {
 	clear: left;
+	margin-left: 0;
 }
 
 .navbar-right {
 	clear: right;
+	margin-right: 0;
 }
 
 .navbar-left nav ul li {
@@ -190,16 +181,15 @@ a img:hover {
 .container {
 	background-color: var(--bg-colour);
 	padding: var(--small-gap);
-	margin-bottom: var(--medium-gap);
+	margin: var(--small-gap);
 }
 
 /* I'm not sure about the purpose of this class */
 .maintenance {
-	font-family: var(--maintenance-font);
-	font-size: var(--medium-font);
 	background-color: yellow;
 	color: red;
-	margin: var(--small-gap) 0;
+	font-family: var(--maintenance-font);
+	font-size: var(--medium-font);
 }
 
 /* POSITION */
@@ -268,38 +258,32 @@ a img:hover {
 	opacity: 0.9;
 }
 
-
-/* LINKS */
-
-.stealth-link {
-	text-decoration: none;
-	color: var(--text-colour);
-}
-
-.stealth-link:hover {
-	text-decoration: none;
-	color: var(--stealth-hover);
-}
-
-.permanent-link:visited {
-	color: var(--link-colour);
-}
-
-.back-button {
-	margin: var(--small-gap) 0;
-}
-
-.hint div {
-	display: none;
-	background-color: var(--hint-colour);
-}
-
-.hint:hover div {
-	display: inline-block;
+.spaced {
+	letter-spacing: 0.3em;
 }
 
 
 /* TEXT */
+
+#main-title {
+	font-family: var(--title-font);
+	font-size: var(--large-font);
+	font-weight: bolder;
+	margin: 0;
+}
+
+.sub-title {
+	font-family: var(--title-font);
+	font-size: var(--small-font);
+	font-weight: bolder;
+	margin: 0;
+}
+
+.title {
+	font-family: var(--title-font);
+	font-weight: bolder;
+	margin: .5em 0;
+}
 
 .text-center {
 	text-align: center;
@@ -319,10 +303,49 @@ a img:hover {
 	display: inline-block;
 }
 
+.highligthed-text {
+	font-size: 87.5%;
+	color: var(--colour-motive);
+	word-break: break-word;
+}
+
 
 /* IMAGES */
 .img-portrait {
 	padding: var(--small-gap);
+}
+
+
+/* LINKS */
+
+.stealth-link {
+	text-decoration: none;
+	color: var(--text-colour);
+}
+
+.stealth-link:hover {
+	color: var(--stealth-hover);
+}
+
+.stealth-link:visited {
+	color: var(--text-colour);
+}
+
+.permanent-link:visited {
+	color: var(--link-colour);
+}
+
+.back-button {
+	margin: var(--small-gap) 0;
+}
+
+.hint div {
+	display: none;
+	background-color: var(--hint-colour);
+}
+
+.hint:hover div {
+	display: inline-block;
 }
 
 
@@ -415,12 +438,13 @@ a img:hover {
 /* Extra-large */
 
 @media (min-width: 1200px) {
+	/*
 	:root {
 		--small-gap: var(--small-gap-xl);
 		--medium-gap: var(--medium-gap-xl);
 		--large-gap: var(--large-gap-xl);
 	}
-
+	*/
 	.xl-refactor {
 		/*
 			This values will only apply with the current window size.
