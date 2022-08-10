@@ -3,18 +3,19 @@
 :root {
 	/* --colour-motive: #A1E85D; */
 	--colour-motive: white;
-	--bg-colour: white;
-	--width: 864px;
+	--bg-colour: black;
+	--link-colour: white;
+	--card-colour: #888A85;
+	/* --width: 864px; */
 }
 
 body {
-	background-color: black;
 	margin: 0;
 	padding: 0;
 }
 
 a {
-	color: white;
+	color: var(--link-colour);
 }
 
 .header-container {
@@ -61,7 +62,7 @@ a {
 }
 
 .container {
-	background-color: gray;
+	background-color: var(--card-colour);
 	color: black;
 	max-width: var(--width);
 	margin-left: auto;
@@ -77,7 +78,7 @@ a {
 }
 
 .card {
-	background-color: gray;
+	background-color: var(--card-colour);
 	color: black;
 	max-width: var(--width);
 }
@@ -88,7 +89,7 @@ a {
 }
 
 .stealth-link:hover {
-	color: var(--colour-motive);
+	color: var(--card-colour);
 }
 
 .current-show {
