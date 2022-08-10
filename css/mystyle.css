@@ -1,20 +1,20 @@
 /* Insert your style here */
 
 :root {
-	--colour-motive: #A1E85D;
+	/* --colour-motive: #A1E85D; */
+	--colour-motive: white;
 	--bg-colour: white;
 	--width: 864px;
 }
 
 body {
-	/*
-	background-image: url('../img/caro_bg.jpeg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	*/
+	background-color: black;
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	color: white;
 }
 
 .header-container {
@@ -30,6 +30,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	/*
+	background-position: right;
 	max-width: 1024px;
 	min-width: 330px;
 	*/
@@ -60,6 +61,8 @@ body {
 }
 
 .container {
+	background-color: gray;
+	color: black;
 	max-width: var(--width);
 	margin-left: auto;
 	margin-right: auto;
@@ -74,6 +77,8 @@ body {
 }
 
 .card {
+	background-color: gray;
+	color: black;
 	max-width: var(--width);
 }
 
