@@ -70,9 +70,7 @@ hr {
 }
 
 p {
-	/* margin-top: 0; */
 	text-align: justify;
-	/* margin: var(--small-gap) auto var(--medium-gap) auto; */
 	margin: 1em auto;
 }
 
@@ -326,10 +324,6 @@ a img:hover {
 .stealth-link:hover {
 	text-decoration: none;
 	color: var(--colour-motive);
-}
-
-.stealth-link:visited {
-	color: var(--text-colour);
 }
 
 .permanent-link:visited {

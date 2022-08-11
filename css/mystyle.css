@@ -6,7 +6,7 @@
 	--bg-colour: black;
 	--link-colour: white;
 	--card-colour: #888A85;
-	/* --width: 864px; */
+	--width: 1024px;
 }
 
 body {
@@ -30,11 +30,7 @@ a {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	/*
-	background-position: right;
-	max-width: 1024px;
-	min-width: 330px;
-	*/
+	/* background-position: right; */
 	display: block;
 }
 
