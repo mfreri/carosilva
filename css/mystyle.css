@@ -1,11 +1,12 @@
 /* Insert your style here */
 
 :root {
-	/* --colour-motive: #A1E85D; */
-	--colour-motive: white;
-	--bg-colour: black;
-	--link-colour: white;
-	--card-colour: #888A85;
+	/* --color-motive: #A1E85D; */
+	--color-motive: white;
+	--text-color-motive: black;
+	--bg-color: black;
+	--link-color: white;
+	--card-color: #888A85;
 	--width: 1024px;
 }
 
@@ -15,11 +16,11 @@ body {
 }
 
 a {
-	color: var(--link-colour);
+	color: var(--link-color);
 }
 
 .header-container {
-	background-color: var(--colour-motive);
+	background-color: var(--color-motive);
 	display: block;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -35,7 +36,7 @@ a {
 }
 
 .footer-container {
-	background-color: var(--colour-motive);
+	background-color: var(--color-motive);
 	padding-top: 32px;
 }
 
@@ -48,7 +49,7 @@ a {
 }
 
 .navbar {
-	background-color: var(--colour-motive);
+	background-color: var(--color-motive);
 	margin: 0 auto;
 	padding: 0.5em 0;
 }
@@ -57,8 +58,12 @@ a {
 	margin: 0;
 }
 
+.navbar li {
+	padding: .5em var(--small-gap) .5em 0;
+}
+
 .container {
-	background-color: var(--card-colour);
+	background-color: var(--card-color);
 	color: black;
 	max-width: var(--width);
 	margin-left: auto;
@@ -70,22 +75,27 @@ a {
 }
 
 .about {
-	background-color: var(--colour-motive);
+	background-color: var(--color-motive);
 }
 
 .card {
-	background-color: var(--card-colour);
+	background-color: var(--card-color);
 	color: black;
+	width: 100%;
 	max-width: var(--width);
 }
 
 .card img {
 	height: 140px;
 	margin-top: 5px;
+	margin-left: 1.5em;
+}
+
+.card-text {
 }
 
 .stealth-link:hover {
-	color: var(--card-colour);
+	color: var(--card-color);
 }
 
 .current-show {
